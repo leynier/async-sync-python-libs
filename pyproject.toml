@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "async-sync-libs"
+version = "0.1.0"
+description = "Repository with examples and code snippets of conference \"Creando bibliotecas asíncronas y síncronas a la vez\" in the Python Pizza Holguin 2022 event"
+authors = ["Leynier Gutiérrez González <leynier41@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = "^0.21.2"
+fastapi = {extras = ["all"], version = "^0.71.0"}
+
+[tool.poetry.dev-dependencies]
+unasync-cli = "^0.0.9"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
